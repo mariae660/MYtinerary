@@ -1,0 +1,52 @@
+#galeria {
+    width: 80%;
+    margin: auto;
+    height: 50%;
+}
+
+#galeria h3 {
+    color: white;
+    position: relative;
+    top: -65px;
+    font-size: 1rem;
+    padding: auto;
+    margin: auto;
+    text-align: center;
+    z-index: 1;
+}
+
+#galeria h2 {
+    color: white;
+    position: relative;
+    margin: auto;
+    top: -65px;
+    left: 30px;
+    font-size: 1rem;
+    z-index: 1;
+}
+
+#galeria img {
+    width: 200px;
+    height: 100px;
+    max-height: 200px;
+    position: relative;
+}
+
+.columnaizq {
+    float: left;
+    width: 50%;
+}
+
+.columnader {
+    float: right;
+    width: 50%;
+}
+
+.ciudad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin: 6px 3px;
+    overflow: hidden;
+}
