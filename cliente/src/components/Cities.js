@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { getCitys } from "../actions/citiesActions";
-import { Link } from "react-router-dom";
+import CityBanner from "./banner";
+import Header from "./header";
 
 class Cities extends Component {
   constructor() {
@@ -30,26 +31,8 @@ class Cities extends Component {
   renderCitys(filteredCitys) {
     return filteredCitys.length !== 0 ? (
       filteredCitys.map(city => (
-        <div className=" card text-white text-center d-flex " key={city.city}>
-          <Link to={`/itinerary/${city.city}`}>
-            <img
-              src={city.link}
-              className="card-img px-0 mx-0"
-              style={{
-                objectFit: "cover",
-                width: "700px",
-                maxWidth: "100%",
-                maxHeight: "180px",
-                filter: "brightness(50%)"
-              }}
-              alt={`Imagen de ${city.city}`}
-            />
-            <div className="card-img-overlay align-items-center d-flex justify-content-center">
-              <h1 className="card-text text-white align-items-centers">
-                {city.country} - {city.city}
-              </h1>
-            </div>
-          </Link>
+        <div>
+          <CityBanner city={city} />
         </div>
       ))
     ) : (

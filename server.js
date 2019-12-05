@@ -9,6 +9,8 @@ app.use(morgan("dev"));
 app.use(express.json());
 app.use(cors());
 app.use("/api/cities", require("./routes/cities"));
+app.use("/api/itinerary", require("./routes/itinerary"));
+app.use("/api/activities", require("./routes/activities"));
 app.use(express.static(path.join(__dirname, "cliente", "public")));
 app.listen(port);
 console.log("Port1:" + port);

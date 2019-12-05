@@ -1,16 +1,16 @@
 import axios from "axios";
-import { ITEMS, LOAD, ERROR } from "./types";
+import { ITEMS1, LOAD1, ERROR1 } from "./types";
 
-export const getCitys = () => dispach => {
+export const getitineraries = cityid => dispach => {
   dispach({
-    type: LOAD
+    type: LOAD1
   });
 
   axios
-    .get("http://localhost:5000/api/cities")
+    .get(`http://localhost:5000/api/itinerary/${cityid}`)
     .then(data => {
       dispach({
-        type: ITEMS,
+        type: ITEMS1,
         payload: data.data
       });
     })

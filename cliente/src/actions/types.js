@@ -1,3 +1,9 @@
 export const ITEMS = "ITEMS";
 export const LOAD = "LOAD";
 export const ERROR = "ERROR";
+export const ITEMS1 = "ITEMS1";
+export const LOAD1 = "LOAD1";
+export const ERROR1 = "ERROR1";
+export const ERROR2 = "ERROR2";
+export const ITEMS2 = "ITEMS2";
+export const LOAD2 = "LOAD2";

@@ -7,4 +7,4 @@ const City = new Schema({
   // img: { type: String }
 });
 
-module.exports = mongoose.model("cities", City);
+module.exports = mongoose.model("cities", City, "cities");
