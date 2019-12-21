@@ -1,0 +1,6 @@
+{
+    "mongoURI": "mongodb+srv://mariaelena:23857774@cluster0-iskdx.mongodb.net/Myitinerary?retryWrites=true&w=majority",
+    "jwtSecret": "mariafernandaes_loca",
+    "client_id": "1041434110316-7rvici1fpqvcpmuf85mgi40s7cvmlstk.apps.googleusercontent.com",
+    "client_secret": "OmsDpTJ1OapUntE1mQvJiVBn"
+}

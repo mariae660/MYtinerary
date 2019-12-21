@@ -4,7 +4,7 @@ const router = express.Router();
 const activities = require("../models/activities");
 router.get("/:idItinerary", async (req, res) => {
   const idItinerary = req.params.idItinerary;
-  const activities1 = await activities.find({ idItinerary });
+  const activities1 = await activities.find({ idItinerary: idItinerary });
   res.json(activities1);
 });
 router.post("/", async (req, res) => {

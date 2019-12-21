@@ -1,10 +1,11 @@
 const mongoose = require("mongoose");
-const url =
-  "mongodb+srv://mariaelena:23857774@cluster0-iskdx.mongodb.net/Myitinerary?retryWrites=true&w=majority";
+const config = require("config");
+const url = config.get("mongoURI");
 mongoose
   .connect(url, {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useCreateIndex: true
   })
   .then(db => console.log("It´s ready"));
 

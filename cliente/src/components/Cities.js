@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { getCitys } from "../actions/citiesActions";
 import CityBanner from "./banner";
-import Header from "./header";
 
 class Cities extends Component {
   constructor() {

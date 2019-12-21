@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import { getitineraries } from "../actions/itineraryactions";
 import { getCitys } from "../actions/citiesActions";
 import CityBanner from "./banner";
-import Footer from "./footer2";
 import Footer2 from "./footer2";
 import Activities from "./activities";
 
